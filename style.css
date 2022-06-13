@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Cyan: hsl(179, 62%, 43%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+    --font-family: 'Karla', sans-serif;
+    --font-size: 16px;
+}
+
+body {
+    background-color: var(--Light-Gray);
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+.container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    color: white;
+    margin: 2rem 0;
+    height: 500px;
+    width: 50%;
+    overflow: hidden;
+}
+
+.top-block {
+    padding: 2.5rem;
+    height: 45%;
+}
+
+.top-block h1 {
+    color: var(--Cyan);
+    font-size: 1.6rem;
+    margin-bottom: 1.2rem;
+}
+
+.top-block h2 {
+    color: var(--Bright-Yellow);
+    font-size: 1.2rem;
+    margin-bottom: 0.7rem;
+}
+
+.top-block p {
+    color: var(--Grayish-Blue);
+    line-height: 1.5rem;
+}
+
+.bottom-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 55%;
+}
+
+.card-sub {
+    background-color: var(--Cyan);
+    padding: 2.5rem;
+    height: 100%;
+    width: 50%;
+}
+
+.card-sub h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.card-sub div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: .5rem;
+}
+
+.card-sub div h3 {
+    font-size: 2rem;
+    margin-right: .5rem;
+}
+
+.card-sub div a {
+    color: var(--Light-Gray);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.card-sub p {
+    margin-bottom: 2rem;
+}
+
+.card-sub button {
+    background-color: var(--Bright-Yellow);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 1rem;
+    width: 100%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.card-why {
+    background-color: hsl(179, 62%, 43%, 70%);
+    padding: 2.5rem;
+    height: 100%;
+    width: 50%;
+}
+
+.card-why h2 {
+    margin-bottom: 1rem;
+}
+
+.card-why p {
+    color: var(--Light-Gray);
+    font-weight: 400;
+    font-size: .9rem;
+    line-height: 1.3rem;
+}
+
+.attribution {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.attribution a {
+    color: var(--Cyan);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.attribution a:hover {
+    color: var(--Bright-Yellow);
+}
+
+@media screen and (max-width: 1120px) {
+        .container {
+            height: 550px;
+        }
+}
+
+@media screen and (max-width: 930px) {
+    .container {
+        height: 600px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    main {
+        margin-top: 0;
+        height: 100vh;
+    }
+
+    .container {
+        height: auto;
+        width: 90%;
+    }
+
+    .bottom-block {
+        flex-direction: column;
+    }
+
+    .card-sub {
+        width: 100%;
+    }
+
+    .card-why {
+        width: 100%;
+    }
+}
